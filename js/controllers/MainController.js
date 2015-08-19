@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', '$http', function($scope, $http) {
+app.controller('MainController', ['$scope', '$http', 'itemData', function($scope, $http, itemData) {
 	/*
 	$scope.itemsjson = null;
 	$http.get('data/items.json')
@@ -11,7 +11,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	*/
 	//var $ = jQuery = require('jquery');
 	//require('./jquery.csv.js');
-	$scope.items = null; //$.csv.toObjects('/data/completed_items_v1.csv');
+	//$scope.items = null; //$.csv.toObjects('/data/completed_items_v1.csv');
 	$scope.itemImage = function (name) {
 		return '/images/items/'+name.replace(/ /gi, '_')+'_item.png'
 	}
@@ -34,6 +34,10 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	    }
 	    $scope.items = lines;
 	};
+	itemData.success(function(data){
+		$scope.processData(data);
+	})
+	/*
 	$http.get('/data/completed_items.csv')
 		.success(function(data) {
 			$scope.processData(data);
@@ -41,6 +45,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		.error(function(data) {
 			$scope.items = null;
 	});
+	*/
 	//$scope.num_items = $scope.items.length;
 
 	// Generate a random item set, given specific restrictions
