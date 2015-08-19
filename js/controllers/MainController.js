@@ -1,17 +1,16 @@
 app.controller('MainController', ['$scope', '$http', 'itemData', function($scope, $http, itemData) {
-	/*
-	$scope.itemsjson = null;
-	$http.get('data/items.json')
+	
+	$scope.items = null;
+	$http.get('data/completed_items.json')
 		.success(function(data) {
-			$scope.itemsjson = data.data;
+			$scope.items = data;//data.data;
 		})
 		.error(function(data) {
-			$scope.itemsjson = null;
+			$scope.items = null;
 		});
-	*/
-	//var $ = jQuery = require('jquery');
-	//require('./jquery.csv.js');
-	//$scope.items = null; //$.csv.toObjects('/data/completed_items_v1.csv');
+	
+
+	//$scope.items = null; 
 	$scope.itemImage = function (name) {
 		return '/images/items/'+name.replace(/ /gi, '_')+'_item.png'
 	}
@@ -32,7 +31,7 @@ app.controller('MainController', ['$scope', '$http', 'itemData', function($scope
 	            lines.push(tarr);
 	        }
 	    }
-	    $scope.items = lines;
+	    $scope.items_csv = lines;
 	};
 	itemData.success(function(data){
 		$scope.processData(data);
@@ -65,10 +64,17 @@ app.controller('MainController', ['$scope', '$http', 'itemData', function($scope
 			// Generate random index for the item array
 			index = Math.floor((Math.random() * $scope.items.length) + 1);
 			data.items[i] = {
+				id: $scope.items[index].id,
+				name: $scope.items[index].name,
+				icon: $scope.itemImage($scope.items[index].name)
+			}
+			/* old csv way
+			data.items[i] = {
 				id: $scope.items[index][0],
 				name: $scope.items[index][1],
 				icon: $scope.itemImage($scope.items[index][1])
 			}
+			*/
 		}
 		return data;
 	}
