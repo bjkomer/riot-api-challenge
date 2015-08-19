@@ -13,7 +13,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 
 	//$scope.items = null; 
 	$scope.itemImage = function (name) {
-		return '/images/items/'+name.replace(/ /gi, '_')+'_item.png'
+		return 'images/items/'+name.replace(/ /gi, '_')+'_item.png'
 	}
 	/*
 	$scope.processData = function(allText) {
