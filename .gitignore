@@ -1,0 +1,12 @@
+# do not include anything that has to do with the node server
+node_modules/*
+server.js
+
+# do not include the API key
+key.txt
+
+# temporarily keep images out of the repo
+images/*
+
+# temporarily keep item and champion data out of the repo
+data/*
