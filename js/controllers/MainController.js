@@ -34,7 +34,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	    }
 	    $scope.items = lines;
 	};
-	$http.get('/data/completed_items_v1.csv')
+	$http.get('/data/completed_items.csv')
 		.success(function(data) {
 			$scope.processData(data);
 		})

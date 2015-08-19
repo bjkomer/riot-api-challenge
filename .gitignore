@@ -6,7 +6,7 @@ server.js
 key.txt
 
 # temporarily keep images out of the repo
-images/*
+#images/*
 
 # temporarily keep item and champion data out of the repo
-data/*
+#data/*
