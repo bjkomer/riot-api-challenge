@@ -60,7 +60,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":12,
@@ -375,7 +375,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":131,
@@ -984,7 +984,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":10,
@@ -1047,7 +1047,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":96,
@@ -1073,7 +1073,7 @@
   {
     "id":7,
     "name":"LeBlanc",
-    "image_name":"LeBlanc",
+    "image_name":"Leblanc",
     "yordle":"0",
     "freljord":"0",
     "demacia":"0",
@@ -1299,7 +1299,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":21,
@@ -2118,7 +2118,7 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"1"
   },
   {
     "id":48,
