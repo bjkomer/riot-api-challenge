@@ -317,7 +317,7 @@
   {
     "id":31,
     "name":"Cho'Gath",
-    "image_name":"ChoGath",
+    "image_name":"Chogath",
     "yordle":"0",
     "freljord":"0",
     "demacia":"0",
@@ -1031,7 +1031,7 @@
   {
     "id":121,
     "name":"Kha'Zix",
-    "image_name":"KhaZix",
+    "image_name":"Khazix",
     "yordle":"0",
     "freljord":"0",
     "demacia":"0",
