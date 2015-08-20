@@ -89,28 +89,16 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 
 	$scope.filters = {championfiler: {}, itemfilter: {}}; //default to no filters
 	$scope.setFilter = function (name) {
-		switch(name) {
-			case 'all':
-				$scope.filters['itemfilter'] = {};
-				break;
-			case 'red':
-				$scope.filters['itemfilter'] = {red:"1"};
-				break;
-			case 'blue':
-				$scope.filters['itemfilter'] = {blue:"1"};
-				break;
-			case 'yellow':
-				$scope.filters['itemfilter'] = {yellow:"1"};
-				break;
-			case 'green':
-				$scope.filters['itemfilter'] = {green:"1"};
-				break;
-			case 'white':
-				$scope.filters['itemfilter'] = {white:"1"};
-				break;
-			case 'purple':
-				$scope.filters['itemfilter'] = {purple:"1"};
-				break;
+		$scope.filters['itemfilter'] = {};
+		if (name != 'all') {
+			$scope.filters['itemfilter'][name] = "1";
+		}
+	}
+
+	$scope.setChampFilter = function (name) {
+		$scope.filters['championfilter'] = {};
+		if (name != 'all') {
+			$scope.filters['championfilter'][name] = "1";
 		}
 	}
 
@@ -159,11 +147,12 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 		// TODO: don't pick viktor if his hex core item is not allowed
 		var championFilter = $scope.buildFilter(filters.championfilter, null);
 		var championList = $scope.champions.filter(championFilter);
+		console.log(championList.length);
 		index = Math.floor((Math.random() * championList.length));
 		data.champion = {
-			id: $scope.champions[index].id.toString(),
-			name: $scope.champions[index].name,
-			icon: $scope.championImage($scope.champions[index].image_name),
+			id: championList[index].id.toString(),
+			name: championList[index].name,
+			icon: $scope.championImage(championList[index].image_name),
 		};
 
 
