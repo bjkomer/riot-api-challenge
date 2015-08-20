@@ -76,12 +76,17 @@
             <div class="col-lg-12 text-center">
                 <h1>Challenger League</h1>
                 <p class="lead">When winning is too easy, you need to challenge yourself</p>
-                <ul class="list-unstyled">
-                    <li>bla</li>
-                    <li>bla</li>
-                </ul>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('all')">All</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('red')">Red</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('blue')">Blue</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('yellow')">Yellow</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('green')">Green</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('white')">White</label>
+                <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('purple')">Purple</label>
                 <div>
-                    <a ng-click="itemSetData=buildRandomItemSet()">Challenge Accepted</a>
+                    <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
+                        Challenge Accepted
+                    </button>
                     <item-set data=itemSetData></item-set>
                     <!--<p ng-repeat="item in items"><img ng-src="{{ itemImage(item[1])}}"></p>-->
                     <!--<p ng-repeat="item in items">{{ item.name }} {{ item.id }} {{ itemImage(item.name)}} <img ng-src="{{ itemImage(item.name)}}"></p>-->
