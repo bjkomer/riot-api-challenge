@@ -15,10 +15,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":103,
@@ -39,7 +43,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":84,
@@ -55,12 +63,16 @@
     "piltover":"0",
     "transformer":"0",
     "zodiac":"0",
-    "ninja":"0",
+    "ninja":"1",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":12,
@@ -75,13 +87,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":32,
@@ -102,7 +118,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":34,
@@ -117,13 +137,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":1,
@@ -144,7 +168,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":22,
@@ -165,7 +193,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":268,
@@ -186,7 +218,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":432,
@@ -207,7 +243,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":53,
@@ -228,7 +268,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":63,
@@ -249,7 +293,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":201,
@@ -270,7 +318,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":51,
@@ -291,7 +343,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":69,
@@ -306,13 +362,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":31,
@@ -333,7 +393,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":42,
@@ -354,7 +418,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":122,
@@ -375,7 +443,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":131,
@@ -396,7 +468,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":36,
@@ -417,7 +493,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":119,
@@ -438,7 +518,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":245,
@@ -459,7 +543,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":60,
@@ -473,14 +561,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":28,
@@ -501,7 +593,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":81,
@@ -522,7 +618,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":9,
@@ -543,7 +643,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":114,
@@ -564,7 +668,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":105,
@@ -585,7 +693,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":3,
@@ -606,7 +718,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":41,
@@ -627,7 +743,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":86,
@@ -648,7 +768,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":150,
@@ -662,14 +786,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":79,
@@ -690,7 +818,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":104,
@@ -711,7 +843,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":120,
@@ -726,13 +862,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":74,
@@ -753,7 +893,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":39,
@@ -774,7 +918,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":40,
@@ -795,7 +943,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":59,
@@ -816,7 +968,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":24,
@@ -837,7 +993,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":126,
@@ -851,14 +1011,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":222,
@@ -879,7 +1043,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":429,
@@ -900,7 +1068,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":43,
@@ -921,7 +1093,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":30,
@@ -939,10 +1115,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":38,
@@ -963,7 +1143,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":55,
@@ -984,7 +1168,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":10,
@@ -1005,7 +1193,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":85,
@@ -1021,12 +1213,16 @@
     "piltover":"0",
     "transformer":"0",
     "zodiac":"0",
-    "ninja":"0",
+    "ninja":"1",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":121,
@@ -1047,7 +1243,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":96,
@@ -1065,10 +1265,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":7,
@@ -1089,7 +1293,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":64,
@@ -1105,12 +1313,16 @@
     "piltover":"0",
     "transformer":"0",
     "zodiac":"0",
-    "ninja":"0",
+    "ninja":"1",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":89,
@@ -1131,7 +1343,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":127,
@@ -1152,7 +1368,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":236,
@@ -1173,7 +1393,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":117,
@@ -1194,7 +1418,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":99,
@@ -1215,7 +1443,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":54,
@@ -1236,7 +1468,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":90,
@@ -1257,7 +1493,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":57,
@@ -1278,7 +1518,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":11,
@@ -1299,7 +1543,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":21,
@@ -1320,7 +1568,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":82,
@@ -1341,7 +1593,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":25,
@@ -1362,7 +1618,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":267,
@@ -1383,7 +1643,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":75,
@@ -1398,13 +1662,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":111,
@@ -1425,7 +1693,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":76,
@@ -1439,14 +1711,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":56,
@@ -1467,7 +1743,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":20,
@@ -1488,7 +1768,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":2,
@@ -1509,7 +1793,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":61,
@@ -1530,7 +1818,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":80,
@@ -1551,7 +1843,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":78,
@@ -1572,7 +1868,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":133,
@@ -1586,14 +1886,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":33,
@@ -1614,7 +1918,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":421,
@@ -1628,14 +1936,18 @@
     "ionia":"0",
     "zaun":"0",
     "piltover":"0",
-    "transformer":"0",
+    "transformer":"1",
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":58,
@@ -1656,7 +1968,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":107,
@@ -1671,13 +1987,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":92,
@@ -1698,7 +2018,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":68,
@@ -1719,7 +2043,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":13,
@@ -1740,7 +2068,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":113,
@@ -1755,13 +2087,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":35,
@@ -1782,7 +2118,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":98,
@@ -1798,12 +2138,16 @@
     "piltover":"0",
     "transformer":"0",
     "zodiac":"0",
-    "ninja":"0",
+    "ninja":"1",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":102,
@@ -1824,7 +2168,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":27,
@@ -1845,7 +2193,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":14,
@@ -1866,7 +2218,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":15,
@@ -1887,7 +2243,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":72,
@@ -1908,7 +2268,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":37,
@@ -1929,7 +2293,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":16,
@@ -1944,13 +2312,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":50,
@@ -1971,7 +2343,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":134,
@@ -1992,7 +2368,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":223,
@@ -2013,7 +2393,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":91,
@@ -2034,7 +2418,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":44,
@@ -2055,7 +2443,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":17,
@@ -2070,13 +2462,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"1",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"1"
   },
   {
     "id":412,
@@ -2097,7 +2493,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":18,
@@ -2118,7 +2518,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"1"
+    "resets":"1",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":48,
@@ -2139,7 +2543,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":23,
@@ -2160,7 +2568,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":4,
@@ -2181,7 +2593,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":29,
@@ -2196,13 +2612,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":77,
@@ -2223,7 +2643,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":6,
@@ -2244,7 +2668,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":110,
@@ -2265,7 +2693,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":67,
@@ -2286,7 +2718,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":45,
@@ -2307,7 +2743,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":161,
@@ -2328,7 +2768,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":254,
@@ -2349,7 +2793,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":112,
@@ -2370,7 +2818,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":8,
@@ -2391,7 +2843,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":106,
@@ -2412,7 +2868,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":19,
@@ -2433,7 +2893,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":62,
@@ -2448,13 +2912,17 @@
     "zaun":"0",
     "piltover":"0",
     "transformer":"0",
-    "zodiac":"0",
+    "zodiac":"1",
     "ninja":"0",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":101,
@@ -2475,7 +2943,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":5,
@@ -2496,7 +2968,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":157,
@@ -2517,7 +2993,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":83,
@@ -2535,10 +3015,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":154,
@@ -2556,10 +3040,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":238,
@@ -2575,12 +3063,16 @@
     "piltover":"0",
     "transformer":"0",
     "zodiac":"0",
-    "ninja":"0",
+    "ninja":"1",
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":115,
@@ -2601,7 +3093,11 @@
     "deathless":"0",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":26,
@@ -2619,10 +3115,14 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   },
   {
     "id":143,
@@ -2640,9 +3140,13 @@
     "zodiac":"0",
     "ninja":"0",
     "void":"0",
-    "deathless":"0",
+    "deathless":"1",
     "jumpers":"0",
     "animals":"0",
-    "resets":"0"
+    "resets":"0",
+    "traps":"0",
+    "medic":"0",
+    "budget":"0",
+    "stealth":"0"
   }
 ]

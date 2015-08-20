@@ -165,6 +165,12 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 		// Pick Boots
 		var bootsFilter = $scope.buildFilter(filters.itemfilter, {boots:1});
 		var bootsList = $scope.items.filter(bootsFilter);
+
+		// If the filter doesn't have any boots (i.e. active items) pick from all boots
+		if (bootsList.length == 0) {
+			bootsFilter = $scope.buildFilter(null, {boots:1});
+			bootsList = $scope.items.filter(bootsFilter);
+		}
 		//alert($scope.items.length);
 		//alert(bootsList.length);
 		index = Math.floor((Math.random() * bootsList.length));
