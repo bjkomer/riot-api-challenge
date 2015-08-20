@@ -10,3 +10,6 @@ key.txt
 
 # temporarily keep item and champion data out of the repo
 #data/*
+
+# Don't include csv files
+*.csv
