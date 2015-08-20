@@ -40,19 +40,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand active" data-toggle="tab" href="#ultimate-bravery">Ultimate Bravery</a>
-            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a class="active" data-toggle="tab" href="#ultimate-bravery">Ultimate Bravery</a>
+                    </li>
                     <li>
                         <a data-toggle="tab" href="#power-rangers">Power Rangers</a>
                     </li>
@@ -74,21 +67,48 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Challenger League</h1>
-                <p class="lead">When winning is too easy, you need to challenge yourself</p>
+                <!--<h1>Challenger League</h1>
+                <p class="lead">When winning is too easy, you need to challenge yourself</p>-->
+
                 <div class="tab-content">
                     <div id="ultimate-bravery" class="tab-pane fade in active">
-                        <div class="item-filters">
-                            <label class="radio-inline active"><input type="radio" name="optradio" ng-click="setFilter('all')" checked="">All</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('red')">Red</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('blue')">Blue</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('yellow')">Yellow</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('green')">Green</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('white')">White</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('purple')">Purple</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('purple')">Cheap</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" ng-click="setFilter('purple')">Active</label>
+                        <div>
+                            <div class="item-filters pull-right">
+                                <div class="btn-group-vertical" data-toggle="buttons">
+                                    <label class="btn btn-primary active" ng-click="setFilter('all')"><input type="radio" name="optradio">All</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('red')"><input type="radio" name="optradio">Red</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('blue')"><input type="radio" name="optradio">Blue</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('yellow')"><input type="radio" name="optradio">Yellow</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('green')"><input type="radio" name="optradio">Green</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('white')"><input type="radio" name="optradio">White</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('purple')"><input type="radio" name="optradio">Purple</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('budget')"><input type="radio" name="optradio">Cheap</label>
+                                    <label class="btn btn-primary" ng-click="setFilter('active')"><input type="radio" name="optradio">Active</label>
+                                </div>
                             </div>
+                            <div class="item-filters pull-right">
+                                <div class="btn-group-vertical" data-toggle="buttons">
+                                    <label class="btn btn-primary active" ng-click="setChampFilter('all')"><input type="radio" name="optradio">All</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('yordle')"><input type="radio" name="optradio">Yordle</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('freljord')"><input type="radio" name="optradio">Freljord</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('demacia')"><input type="radio" name="optradio">Demacia</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('noxus')"><input type="radio" name="optradio">Noxus</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('bilgewater')"><input type="radio" name="optradio">Bilgewater</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('ionia')"><input type="radio" name="optradio">Ionia</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('zaun')"><input type="radio" name="optradio">Zaun</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('piltover')"><input type="radio" name="optradio">Piltover</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('void')"><input type="radio" name="optradio">Void</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('ninja')"><input type="radio" name="optradio">Ninja</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('transformer')"><input type="radio" name="optradio">Transformer</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('zodiac')"><input type="radio" name="optradio">Zodiac</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('deathless')"><input type="radio" name="optradio">Deathless</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('barnyard')"><input type="radio" name="optradio">Barnyard</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('traps')"><input type="radio" name="optradio">Traps</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('resets')"><input type="radio" name="optradio">Resets</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('jumpers')"><input type="radio" name="optradio">Jumpers</label>
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
                                 Challenge Accepted

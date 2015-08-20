@@ -4,3 +4,7 @@
 .item-filters {
 	padding-bottom: 1em;;
 }
+.item-filters input[type=radio] {
+    display:none; 
+    margin:10px;
+}
