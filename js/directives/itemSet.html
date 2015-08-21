@@ -1,6 +1,8 @@
 <div class="item-set" ng-if="data != null">
+	<h2>{{data.title}}</h2>
+	<h2>{{data.champion.name}}</h2>
 	<div class="container">
-		<img ng-src="{{data.champion.icon}}" title="{{data.champion.name}}">
+		<img class="champion-icon" ng-src="{{data.champion.icon}}" title="{{data.champion.name}}">
 		<div class="item-icons" ng-repeat="item in data.items">
 			<img ng-src="{{item.icon}}" title="{{item.name}}">
 		</div>

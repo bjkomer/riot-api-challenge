@@ -119,6 +119,18 @@
                         </div>
                     </div>
                     <div id="power-rangers" class="tab-pane fade">
+                        <div class="available-items">
+                            <button type="button" class="btn btn-danger" ng-click="buildRangerItemSet()">
+                                Power Ranger Solo
+                            </button>
+                            <button type="button" class="btn btn-danger" ng-click="buildRangerItemSets()">
+                                Power Ranger Team
+                            </button>
+                            <item-set data=rangerItems></item-set>
+                            <div ng-repeat="itemData in teamRangerItems">
+                                <item-set data=itemData></item-set>
+                            </div>
+                        </div>
                     </div>
                     <div id="budget" class="tab-pane fade">
                     </div>
@@ -146,6 +158,7 @@
 
     <!-- Directives -->
     <script src="js/directives/itemSet.js"></script>
+    <script src="js/directives/itemsAvailable.js"></script>
 
     <!-- Services -->
     <!--<script src="js/services/itemData.js"></script>-->

@@ -1,5 +1,5 @@
 //app.controller('MainController', ['$scope', '$http', 'itemData', function($scope, $http, itemData) {
-app.controller('MainController', ['$scope', '$http', function($scope, $http, itemData) {
+app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	
 	$scope.items = null;
 	$http.get('data/completed_items.json')
@@ -103,7 +103,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 	}
 
 	// Constructs the json for the item set file
-	$scope.buildItemSetFile = function (items, champion) {
+	$scope.buildItemSetFile = function (items, champion, name, blockName) {
 		var itemList = [];
 		for (var i = 0; i < items.length; i++) {
 			itemList.push({
@@ -112,7 +112,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 			});
 		}
 		return {
-			title: "Challenger",
+			title: name,
 			type: "custom",
 			map: "any",
 			mode: "any",
@@ -120,13 +120,50 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 			sortrank: 0,
 			blocks: [
 				{
-					type: "Your Arsenal", //TODO: put a random phrase here
+					type: blockName, //TODO: put a random phrase here
 					recMath: false,
 					items: itemList
 				}
 			]
 		}
 	};
+
+	//TODO add more here
+	// some fun titles for the item sets
+	$scope.braveryTitles = ["Feeder", "Noob", "Cardboard VII", "Useless"];
+	$scope.budgetTitles = ["Super Saver", "Cheapskate", "Broke", "Penniless", "Begger", 
+	                       "Financially Irresponsible", "Coupon Clipper", "Poverty Stricken",
+	                       "Ramen Noodle Eating", "Bankrupt", "Tax Evader"];
+	$scope.activeTitles = ["Button Masher", "Confused", "Face Roller", "Repetitive Strain Injury", 
+	                       "Spammer", "Psychotic", "Broken Keyboard"]
+	
+	// Picks a title relevant to the item filter used
+	$scope.pickTitle = function (itemfilter) {
+		if (itemfilter.hasOwnProperty('budget')) {
+			index = Math.floor((Math.random() * $scope.budgetTitles.length));
+			return $scope.budgetTitles[index];
+		} else if (itemfilter.hasOwnProperty('active')) {
+			index = Math.floor((Math.random() * $scope.activeTitles.length));
+			return $scope.activeTitles[index];
+		} else if (itemfilter.hasOwnProperty('red')) {
+			return "Red Ranger";
+		} else if (itemfilter.hasOwnProperty('blue')) {
+			return "Blue Ranger";
+		} else if (itemfilter.hasOwnProperty('yellow')) {
+			return "Yellow Ranger";
+		} else if (itemfilter.hasOwnProperty('green')) {
+			return "Green Ranger";
+		} else if (itemfilter.hasOwnProperty('white')) {
+			return "White Ranger";
+		} else if (itemfilter.hasOwnProperty('purple')) {
+			return "Purple Ranger";
+		}
+		else {
+			index = Math.floor((Math.random() * $scope.braveryTitles.length));
+			return $scope.braveryTitles[index];
+		}
+	}
+
 
 	// Generate a random item set, given specific restrictions
 	$scope.buildRandomItemSet = function (filters) {
@@ -136,25 +173,20 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 			spells: [null, null],							//two summoner spells
 			masteries: [0, 0, 0],							//mastery points
 			max: [0],										//ability to max first
-			file: null										//text for the item set file
+			file: null,										//text for the item set file
+			title: null										//title for the item set
 		};
 		//TODO: pick random summoner spells, randomly include a jungle item if smite is taken
 		//TODO: pick random boots first
 		//TODO: code in the restrictions
 		//TODO: pick a random champion
 		
+		// Pick title for item set
+		data.title = $scope.pickTitle(filters.itemfilter)
+
 		// Pick Champion
 		// TODO: don't pick viktor if his hex core item is not allowed
-		var championFilter = $scope.buildFilter(filters.championfilter, null);
-		var championList = $scope.champions.filter(championFilter);
-		console.log(championList.length);
-		index = Math.floor((Math.random() * championList.length));
-		data.champion = {
-			id: championList[index].id.toString(),
-			name: championList[index].name,
-			icon: $scope.championImage(championList[index].image_name),
-		};
-
+		data.champion = $scope.pickChampion(filters.championfilter);
 
 		// Pick Summoner Spells
 		//TODO
@@ -196,7 +228,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 		// Don't allow boots and jungle items to be found normally
 		var itemFilter = $scope.buildFilter(filters.itemfilter, {boots:"0", jungle:"0", viktor:"0"});
 		var itemList = $scope.items.filter(itemFilter);
-		var alreadyPicked = []
+		var alreadyPicked = [];
 
 		while( i < 6 ) {
 			// Generate random index for the item array
@@ -223,8 +255,107 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http, ite
 				itemList = $scope.items.filter(itemFilter);
 			}
 		}
-		data.file = $scope.buildItemSetFile(data.items, data.champion);
+		//TODO: put fun names in for the item sets 
+		data.file = $scope.buildItemSetFile(data.items, data.champion, data.title, "Your Arsenal");
 		return data;
+	}
+
+	$scope.rangerColours = ["red", "blue", "yellow", "green", "white", "purple"];
+	$scope.rangerNames = ["Red Ranger", "Blue Ranger", "Yellow Ranger", "Green Ranger", "White Ranger", "Purple Ranger"];
+	
+	$scope.buildRangerItemSet = function() {
+		// Remove the team items from display, if there are any
+		$scope.teamRangerItems = null;
+
+		// Pick a random colour and set a filter for that colour
+		var index = Math.floor((Math.random() * $scope.rangerColours.length));
+		var filter = {}
+		filter[$scope.rangerColours[index]] = "1"
+
+		// Build the item list
+		$scope.rangerItems = $scope.buildItemsAvailable({championfilter:{}, itemfilter:filter}, $scope.rangerNames[index], $scope.rangerNames[index])
+	}
+
+	$scope.buildRangerItemSets = function() {
+		// Remove the individual items from display, if there are any
+		$scope.rangerItems = null;
+		$scope.teamRangerItems = [];
+
+		var pickedColours = [];
+		var pickedChampions = [];
+		
+		for (var i = 1; i < 5; i++) {
+
+			// Pick Colour
+			var colourIndex = Math.floor((Math.random() * $scope.rangerColours.length));
+			// Keep picking randomly until you get a unique colour
+			while( pickedColours.indexOf(colourIndex ) > -1 ) {
+				colourIndex  = Math.floor((Math.random() * $scope.rangerColours.length));
+			}
+			pickedColours.push([colourIndex]);
+
+			// Pick Champion
+			var champIndex = Math.floor((Math.random() * $scope.champions.length));
+			// Keep picking randomly until you get a unique colour
+			while( pickedChampions.indexOf(champIndex ) > -1 ) {
+				champIndex  = Math.floor((Math.random() * $scope.champions.length));
+			}
+			pickedChampions.push([champIndex]);
+
+			var itemFilter = {};
+			itemFilter[$scope.rangerColours[colourIndex]] = "1";
+			var champFilter = {};
+			champFilter["id"] = $scope.champions[champIndex].id;
+			$scope.teamRangerItems.push($scope.buildItemsAvailable({championfilter:champFilter, itemfilter:itemFilter}, $scope.rangerNames[colourIndex], $scope.rangerNames[colourIndex]));
+		}
+		console.log($scope.teamRangerItems)
+	}
+
+	// builds a list of all items available for a particular filter
+	$scope.buildItemsAvailable = function(filters, name, blockName) {
+		var data = {
+			items: [],				//list of all items
+			champion: null,			//chamption info
+			spells: [null, null],	//two summoner spells
+			masteries: [0, 0, 0],	//mastery points
+			max: [0],				//ability to max first
+			file: null,				//text for the item set file
+			title: name				//title for the item set
+		};
+
+		// Pick Champion
+		// TODO: don't pick viktor if his hex core item is not allowed
+		data.champion = $scope.pickChampion(filters.championfilter);
+		data.items = $scope.getAllItems(filters.itemfilter);
+		data.file = $scope.buildItemSetFile(data.items, data.champion, name, blockName);
+		return data;
+	}
+
+	// Picks a random champion following a given filter
+	$scope.pickChampion = function (filter) {
+		var championFilter = $scope.buildFilter(filter, null);
+		var championList = $scope.champions.filter(championFilter);
+		index = Math.floor((Math.random() * championList.length));
+		return {
+			id: championList[index].id.toString(),
+			name: championList[index].name,
+			icon: $scope.championImage(championList[index].image_name),
+		};
+	}
+
+	// Returns an array with all items that match a particular filter
+	$scope.getAllItems = function (filter) {
+		var itemFilter = $scope.buildFilter(filter, null);
+		var itemList = $scope.items.filter(itemFilter);
+		var ret = [];
+		for (var i = 0; i < itemList.length; i++ ) {
+			ret.push({
+				id: itemList[i].id.toString(),
+				name: itemList[i].name,
+				icon: $scope.itemImage(itemList[i].name)
+			})
+		}
+		return ret
 	}
 
 

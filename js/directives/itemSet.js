@@ -1,3 +1,4 @@
+// Builds and displays a particular item set (including champion and summoner spells)
 app.directive('itemSet', function(){
 	return {
 		restrict: 'E',

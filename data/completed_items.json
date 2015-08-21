@@ -14,7 +14,7 @@
     "purple":"1",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -31,7 +31,7 @@
     "green":"0",
     "white":"0",
     "purple":"0",
-    "active":"0",
+    "active":"1",
     "movespeed":"0",
     "budget":"0",
     "aura":"0",
@@ -52,7 +52,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -185,7 +185,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"1"
   },
@@ -204,7 +204,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"1"
   },
@@ -223,7 +223,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -280,7 +280,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -356,7 +356,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -393,7 +393,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -431,7 +431,7 @@
     "white":"0",
     "purple":"1",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -451,7 +451,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -489,7 +489,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -508,7 +508,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -527,7 +527,7 @@
     "purple":"1",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -546,7 +546,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -596,7 +596,7 @@
     "viktor":"0",
     "freljord":"0",
     "red":"0",
-    "yellow":"0",
+    "yellow":"1",
     "blue":"0",
     "green":"0",
     "white":"1",
@@ -679,7 +679,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -698,7 +698,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -754,8 +754,27 @@
     "white":"0",
     "purple":"0",
     "active":"0",
+    "movespeed":"1",
+    "budget":"1",
+    "aura":"0",
+    "gold":"0"
+  },
+  {
+    "id":3053,
+    "name":"Sterak's Gage",
+    "boots":"0",
+    "jungle":"0",
+    "viktor":"0",
+    "freljord":"0",
+    "red":"1",
+    "yellow":"0",
+    "blue":"0",
+    "green":"0",
+    "white":"0",
+    "purple":"0",
+    "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -774,7 +793,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -793,7 +812,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -812,7 +831,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"1"
   },
@@ -869,6 +888,25 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
+    "budget":"1",
+    "aura":"0",
+    "gold":"0"
+  },
+  {
+    "id":3748,
+    "name":"Titanic Hydra",
+    "boots":"0",
+    "jungle":"0",
+    "viktor":"0",
+    "freljord":"0",
+    "red":"0",
+    "yellow":"0",
+    "blue":"0",
+    "green":"1",
+    "white":"1",
+    "purple":"0",
+    "active":"1",
+    "movespeed":"0",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -887,7 +925,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -906,8 +944,8 @@
     "white":"0",
     "purple":"1",
     "active":"1",
-    "movespeed":"0",
-    "budget":"0",
+    "movespeed":"1",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -926,7 +964,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -964,7 +1002,7 @@
     "purple":"0",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -983,7 +1021,7 @@
     "purple":"1",
     "active":"0",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -1021,7 +1059,7 @@
     "purple":"0",
     "active":"1",
     "movespeed":"0",
-    "budget":"0",
+    "budget":"1",
     "aura":"0",
     "gold":"0"
   },
@@ -1039,7 +1077,7 @@
     "white":"1",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1210,7 +1248,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1229,7 +1267,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1248,7 +1286,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1267,7 +1305,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1286,7 +1324,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1305,7 +1343,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1324,7 +1362,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1343,7 +1381,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1362,7 +1400,7 @@
     "white":"0",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
@@ -1381,7 +1419,7 @@
     "white":"1",
     "purple":"0",
     "active":"0",
-    "movespeed":"0",
+    "movespeed":"1",
     "budget":"0",
     "aura":"0",
     "gold":"0"
