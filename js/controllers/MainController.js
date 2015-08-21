@@ -284,7 +284,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		var pickedColours = [];
 		var pickedChampions = [];
 		
-		for (var i = 1; i < 5; i++) {
+		for (var i = 0; i < 5; i++) {
 
 			// Pick Colour
 			var colourIndex = Math.floor((Math.random() * $scope.rangerColours.length));
