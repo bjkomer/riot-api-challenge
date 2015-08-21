@@ -292,7 +292,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			while( pickedColours.indexOf(colourIndex ) > -1 ) {
 				colourIndex  = Math.floor((Math.random() * $scope.rangerColours.length));
 			}
-			pickedColours.push([colourIndex]);
+			pickedColours.push(colourIndex);
 
 			// Pick Champion
 			var champIndex = Math.floor((Math.random() * $scope.champions.length));
@@ -300,7 +300,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			while( pickedChampions.indexOf(champIndex ) > -1 ) {
 				champIndex  = Math.floor((Math.random() * $scope.champions.length));
 			}
-			pickedChampions.push([champIndex]);
+			pickedChampions.push(champIndex);
 
 			var itemFilter = {};
 			itemFilter[$scope.rangerColours[colourIndex]] = "1";
