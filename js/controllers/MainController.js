@@ -256,7 +256,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			}
 		}
 		//TODO: put fun names in for the item sets 
-		data.file = $scope.buildItemSetFile(data.items, data.champion, data.title, "Your Arsenal");
+		data.file = $scope.buildItemSetFile(data.items, data.champion, data.title+" "+data.champion.name, "Your Arsenal");
 		return data;
 	}
 
@@ -296,7 +296,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 
 			// Pick Champion
 			var champIndex = Math.floor((Math.random() * $scope.champions.length));
-			// Keep picking randomly until you get a unique colour
+			// Keep picking randomly until you get a unique champion
 			while( pickedChampions.indexOf(champIndex ) > -1 ) {
 				champIndex  = Math.floor((Math.random() * $scope.champions.length));
 			}
@@ -309,6 +309,88 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			$scope.teamRangerItems.push($scope.buildItemsAvailable({championfilter:champFilter, itemfilter:itemFilter}, $scope.rangerNames[colourIndex], $scope.rangerNames[colourIndex]));
 		}
 		console.log($scope.teamRangerItems)
+	}
+
+	$scope.buildBudgetItemSet = function() {
+		// Remove the team items from display, if there are any
+		$scope.teamBudgetItems = null;
+
+		// Pick a random title
+		var index = Math.floor((Math.random() * $scope.budgetTitles.length));
+
+		// Build the item list
+		$scope.budgetItems = $scope.buildItemsAvailable({championfilter:{budget:"1"}, itemfilter:{budget:"1"}}, $scope.budgetTitles[index], $scope.budgetTitles[index])
+	}
+
+	$scope.buildBudgetItemSets = function() {
+		// Remove the individual items from display, if there are any
+		$scope.budgetItems = null;
+		$scope.teamBudgetItems = [];
+
+		var pickedTitles = [];
+		var pickedChampions = [];
+		
+		for (var i = 0; i < 5; i++) {
+
+			// Pick Title
+			var titleIndex = Math.floor((Math.random() * $scope.budgetTitles.length));
+			// Keep picking randomly until you get a unique colour
+			while( pickedTitles.indexOf(titleIndex ) > -1 ) {
+				titleIndex  = Math.floor((Math.random() * $scope.budgetTitles.length));
+			}
+			pickedTitles.push(titleIndex);
+
+			// Pick Champion
+			var champ = $scope.pickChampion({budget:"1"});
+			// Keep picking randomly until you get a unique colour
+			while( pickedChampions.indexOf(champ.id ) > -1 ) {
+				 champ = $scope.pickChampion({budget:"1"});
+			}
+			pickedChampions.push(champ.id);
+
+			$scope.teamBudgetItems.push($scope.buildItemsAvailable({championfilter:{id:champ.id}, itemfilter:{budget:"1"}}, $scope.budgetTitles[titleIndex], $scope.budgetTitles[titleIndex]));
+		}
+	}
+
+	$scope.buildActiveItemSet = function() {
+		// Remove the team items from display, if there are any
+		$scope.teamActiveItems = null;
+
+		// Pick a random title
+		var index = Math.floor((Math.random() * $scope.activeTitles.length));
+
+		// Build the item list
+		$scope.activeItems = $scope.buildItemsAvailable({championfilter:{}, itemfilter:{active:"1"}}, $scope.activeTitles[index], $scope.activeTitles[index])
+	}
+
+	$scope.buildActiveItemSets = function() {
+		// Remove the individual items from display, if there are any
+		$scope.activeItems = null;
+		$scope.teamActiveItems = [];
+
+		var pickedTitles = [];
+		var pickedChampions = [];
+		
+		for (var i = 0; i < 5; i++) {
+
+			// Pick Title
+			var titleIndex = Math.floor((Math.random() * $scope.activeTitles.length));
+			// Keep picking randomly until you get a unique colour
+			while( pickedTitles.indexOf(titleIndex ) > -1 ) {
+				titleIndex  = Math.floor((Math.random() * $scope.activeTitles.length));
+			}
+			pickedTitles.push(titleIndex);
+
+			// Pick Champion
+			var champ = $scope.pickChampion({});
+			// Keep picking randomly until you get a unique colour
+			while( pickedChampions.indexOf(champ.id ) > -1 ) {
+				 champ = $scope.pickChampion({});
+			}
+			pickedChampions.push(champ.id);
+
+			$scope.teamActiveItems.push($scope.buildItemsAvailable({championfilter:{id:champ.id}, itemfilter:{active:"1"}}, $scope.activeTitles[titleIndex], $scope.activeTitles[titleIndex]));
+		}
 	}
 
 	// builds a list of all items available for a particular filter
@@ -327,7 +409,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		// TODO: don't pick viktor if his hex core item is not allowed
 		data.champion = $scope.pickChampion(filters.championfilter);
 		data.items = $scope.getAllItems(filters.itemfilter);
-		data.file = $scope.buildItemSetFile(data.items, data.champion, name, blockName);
+		data.file = $scope.buildItemSetFile(data.items, data.champion, name+" "+data.champion.name, blockName);
 		return data;
 	}
 

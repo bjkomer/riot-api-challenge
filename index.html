@@ -75,7 +75,7 @@
                         <div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
-                                    Challenge Accepted
+                                    MAKE ME BRAVE
                                 </button>
                                 
                             </div>
@@ -139,8 +139,36 @@
                         </div>
                     </div>
                     <div id="budget" class="tab-pane fade">
+                        <div class="available-items">
+                            <div class="button-row">
+                                <button type="button" class="btn btn-danger" ng-click="buildBudgetItemSet()">
+                                    Low Budget Champion
+                                </button>
+                                <button type="button" class="btn btn-danger" ng-click="buildBudgetItemSets()">
+                                    Low Budget Team
+                                </button>
+                            </div>
+                            <item-set data=budgetItems></item-set>
+                            <div ng-repeat="itemData in teamBudgetItems">
+                                <item-set data=itemData></item-set>
+                            </div>
+                        </div>
                     </div>
                     <div id="active" class="tab-pane fade">
+                        <div class="available-items">
+                            <div class="button-row">
+                                <button type="button" class="btn btn-danger" ng-click="buildActiveItemSet()">
+                                    Solo Challenge
+                                </button>
+                                <button type="button" class="btn btn-danger" ng-click="buildActiveItemSets()">
+                                    Team Challenge
+                                </button>
+                            </div>
+                            <item-set data=activeItems></item-set>
+                            <div ng-repeat="itemData in teamActiveItems">
+                                <item-set data=itemData></item-set>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
