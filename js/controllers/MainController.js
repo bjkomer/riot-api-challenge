@@ -308,7 +308,6 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			champFilter["id"] = $scope.champions[champIndex].id;
 			$scope.teamRangerItems.push($scope.buildItemsAvailable({championfilter:champFilter, itemfilter:itemFilter}, $scope.rangerNames[colourIndex], $scope.rangerNames[colourIndex]));
 		}
-		console.log($scope.teamRangerItems)
 	}
 
 	$scope.buildBudgetItemSet = function() {
@@ -440,5 +439,13 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		return ret
 	}
 
+	// Simplified version of Python's range() function
+	$scope.range = function(end) {
+		var result = [];
+	    for (var i = 0; i < end; i += 1) {
+	        result.push(i);
+	    }
+	    return result;
+	}
 
 }]);

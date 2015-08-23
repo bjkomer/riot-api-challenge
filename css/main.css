@@ -10,16 +10,30 @@
 }
 .champ-name {
 	text-align: left;
-	margin:none;
+	width:100%;
 }
-
+.champion-icon {
+	height: 128px;
+	width: 128px;
+	display: inline-block
+}
 .item-set {
 	margin:10px;
+	text-align: left;
 }
-
+.item-file {
+	margin:10px;
+	display: inline-block
+}
+.available-item-container {
+	display: inline-block;
+}
 /*
-.button-row {
-	float: center;
+.available-item-container {
+	text-align:left;
+	display: inline-block;
+	position: relative;
+	height:100px;
 }
 */
 .available-items .item-icons img {
