@@ -73,6 +73,15 @@
                 <div class="tab-content">
                     <div id="ultimate-bravery" class="tab-pane fade in active">
                         <div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
+                                    Challenge Accepted
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 pull-right">
                             <div class="item-filters pull-right">
                                 <div class="btn-group-vertical" data-toggle="buttons">
                                     <label class="btn btn-primary active" ng-click="setFilter('all')"><input type="radio" name="optradio">All</label>
@@ -111,21 +120,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
-                                Challenge Accepted
-                            </button>
-                            <item-set data=itemSetData></item-set>
-                        </div>
+                        <item-set data=itemSetData></item-set>
                     </div>
                     <div id="power-rangers" class="tab-pane fade">
                         <div class="available-items">
-                            <button type="button" class="btn btn-danger" ng-click="buildRangerItemSet()">
-                                Power Ranger Solo
-                            </button>
-                            <button type="button" class="btn btn-danger" ng-click="buildRangerItemSets()">
-                                Power Ranger Team
-                            </button>
+                            <div class="button-row">
+                                <button type="button" class="btn btn-danger" ng-click="buildRangerItemSet()">
+                                    Power Ranger Solo
+                                </button>
+                                <button type="button" class="btn btn-danger" ng-click="buildRangerItemSets()">
+                                    Power Ranger Team
+                                </button>
+                            </div>
                             <item-set data=rangerItems></item-set>
                             <div ng-repeat="itemData in teamRangerItems">
                                 <item-set data=itemData></item-set>

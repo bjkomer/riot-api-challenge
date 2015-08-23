@@ -8,7 +8,20 @@
     display:none; 
     margin:10px;
 }
+.champ-name {
+	text-align: left;
+	margin:none;
+}
 
+.item-set {
+	margin:10px;
+}
+
+/*
+.button-row {
+	float: center;
+}
+*/
 .available-items .item-icons img {
 	width: 50px;
 	height: 50px;
