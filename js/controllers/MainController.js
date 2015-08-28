@@ -210,7 +210,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 					data.items[i] = {
 						id: jungleList[index].id.toString(),
 						name: jungleList[index].name,
-						icon: $scope.jungleImage(jungleList[index].name)
+						icon: $scope.itemImage(jungleList[index].name)
 					}
 					i++;
 				}
