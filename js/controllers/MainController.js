@@ -203,9 +203,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		// chance to pick a jungle item if smite is taken
 		if (data.spells[0].id == 11 || data.spells[1].id == 11) {
 			var jungleFilter = $scope.buildFilter(filters.itemfilter, {jungle:"1"});
-			if (jungleFilter.length > 0) {
+			var jungleList = $scope.items.filter(jungleFilter);
+			if (jungleList.length > 0) {
 				if (Math.random() > .3) {
-					var jungleList = $scope.items.filter(jungleFilter);
 					index = Math.floor((Math.random() * jungleList.length));
 					data.items[i] = {
 						id: jungleList[index].id.toString(),
