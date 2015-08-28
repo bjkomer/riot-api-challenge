@@ -1,15 +1,24 @@
 .item-icons {
 	display: inline-block;
+	position:relative;
+	left:133px;
+	top:-240px;
 }
-.item-filters {
-	padding-bottom: 1em;;
+.filters {
+	padding-bottom: 1em;
+	padding:10px;
 }
-.item-filters input[type=radio] {
+.filters input[type=radio] {
     display:none; 
     margin:10px;
 }
 .item-filters {
-	padding:10px;
+	position: absolute;
+	right:20px;
+}
+.champion-filters {
+	position: absolute;
+	right:120px;
 }
 .champ-name {
 	text-align: left;
@@ -18,19 +27,19 @@
 .champion-icon {
 	height: 128px;
 	width: 128px;
-	display: inline-block
+	display: inline-block;
+	position: relative;
+	top:-80px;
 }
 .item-set {
 	margin:10px;
 	text-align: left;
 }
-.item-file {
-	margin:10px;
-	display: inline-block
-}
+/*
 .available-item-container {
 	display: inline-block;
 }
+*/
 /*
 .available-item-container {
 	text-align:left;
@@ -46,6 +55,11 @@
 
 .item-file {
 	background-color: #c9c9c9;
+	margin:10px;
+	display: inline-block;
+	position:relative;
+	left:256px;
+	top:-65px;
 }
 
 .item-file p {
@@ -61,4 +75,10 @@
 .item-file input:focus,
 .item-file input.focus {
   border: solid 5px #969696;
+}
+
+.spell-icon {
+	position:relative;
+	top:-75px;
+	left:-2px;
 }

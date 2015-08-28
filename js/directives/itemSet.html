@@ -3,15 +3,22 @@
 		<h2>{{data.title}}</h2>
 		<h2>{{data.champion.name}}</h2>
 	</div>
-	<div >
-		<img class="champion-icon" ng-src="{{data.champion.icon}}" title="{{data.champion.name}}">
+	<div class="item-file">
+		<p>Copy Item Set Here</p>
+		<input id="copy-button" onfocus="this.select();" onmouseup="return false;" readonly="readonly" value="{{data.file}}">
+	</div>
+	<div>
+		<div>
+			<img class="champion-icon" ng-src="{{data.champion.icon}}" title="{{data.champion.name}}">
+			<div class="spell-icon">
+				<img ng-src="{{data.spells[0].icon}}" title="{{data.spells[0].name}}">
+				<img ng-src="{{data.spells[1].icon}}" title="{{data.spells[1].name}}">
+			</div>
+		</div>
 		<div class="item-icons" ng-repeat="item in data.items">
 			<img ng-src="{{item.icon}}" title="{{item.name}}">
 		</div>
-		<div class="item-file pull-right">
-			<p>Copy Item Set Here</p>
-			<input id="copy-button" onfocus="this.select();" onmouseup="return false;" readonly="readonly" value="{{data.file}}">
-		</div>
+
 
 	</div>	
 </div>

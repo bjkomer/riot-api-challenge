@@ -18,6 +18,15 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		.error(function(data) {
 			$scope.champions = null;
 	});
+
+	$scope.spells = null;
+	$http.get('data/spells.json')
+		.success(function(data) {
+			$scope.spells = data;
+		})
+		.error(function(data) {
+			$scope.spells = null;
+	});
 	
 	$scope.itemImage = function (name) {
 		return 'images/items/'+name.replace(/ /gi, '_')+'_item.png'
@@ -25,42 +34,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	$scope.championImage = function (name) {
 		return 'images/champions/'+name.replace(/ /gi, '_')+'_Square_0.png'
 	}
-	/*
-	$scope.processData = function(allText) {
-	    // split content based on new line
-	    var allTextLines = allText.split(/\r\n|\n/);
-	    var headers = allTextLines[0].split(',');
-	    var lines = [];
-
-	    for ( var i = 0; i < allTextLines.length; i++) {
-	        // split content based on comma
-	        var data = allTextLines[i].split(',');
-	        if (data.length == headers.length) {
-	            var tarr = [];
-	            for ( var j = 0; j < headers.length; j++) {
-	                tarr.push(data[j]);
-	            }
-	            lines.push(tarr);
-	        }
-	    }
-	    $scope.items_csv = lines;
-	};
-	*/
-	/*
-	itemData.success(function(data){
-		$scope.processData(data);
-	})
-	*/
-	/*
-	$http.get('/data/completed_items.csv')
-		.success(function(data) {
-			$scope.processData(data);
-		})
-		.error(function(data) {
-			$scope.items = null;
-	});
-	*/
-	//$scope.num_items = $scope.items.length;
+	$scope.spellImage = function (name) {
+		return 'images/spells/'+name.replace(/ /gi, '_')+'.png'
+	}
 
 	// returns a filter function that matches the requirements of the given filter object
 	// extra is an additional filter than can be passed and checked as well. Used for boots and jungle items
@@ -190,6 +166,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 
 		// Pick Summoner Spells
 		//TODO
+		data.spells = $scope.pickSpells(filters.itemfilter);
 
 		// Pick Items
 		var i = 0; // number of items picked to far
@@ -223,7 +200,23 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			i++;
 		}
 
-		var jungleFilter = $scope.buildFilter(filters.itemfilter, {jungle:"1"});
+		// chance to pick a jungle item if smite is taken
+		if (data.spells[0].id == 11 || data.spells[1].id == 11) {
+			var jungleFilter = $scope.buildFilter(filters.itemfilter, {jungle:"1"});
+			if (jungleFilter.length > 0) {
+				if (Math.random() > .3) {
+					var jungleList = $scope.items.filter(jungleFilter);
+					index = Math.floor((Math.random() * jungleList.length));
+					data.items[i] = {
+						id: jungleList[index].id.toString(),
+						name: jungleList[index].name,
+						icon: $scope.jungleImage(jungleList[index].name)
+					}
+					i++;
+				}
+			}
+		}
+		
 
 		// Don't allow boots and jungle items to be found normally
 		var itemFilter = $scope.buildFilter(filters.itemfilter, {boots:"0", jungle:"0", viktor:"0"});
@@ -408,6 +401,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		// TODO: don't pick viktor if his hex core item is not allowed
 		data.champion = $scope.pickChampion(filters.championfilter);
 		data.items = $scope.getAllItems(filters.itemfilter);
+		data.spells = $scope.pickSpells(filters.itemfilter);
 		data.file = $scope.buildItemSetFile(data.items, data.champion, name+" "+data.champion.name, blockName);
 		return data;
 	}
@@ -422,6 +416,58 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			name: championList[index].name,
 			icon: $scope.championImage(championList[index].image_name),
 		};
+	}
+
+	// Returns true if the filter is for colours
+	$scope.colourFilter = function(itemfilter){
+		if (itemfilter.hasOwnProperty('red')) {
+			return true;
+		} else if (itemfilter.hasOwnProperty('blue')) {
+			return true;
+		} else if (itemfilter.hasOwnProperty('yellow')) {
+			return true;
+		} else if (itemfilter.hasOwnProperty('green')) {
+			return true;
+		} else if (itemfilter.hasOwnProperty('white')) {
+			return true;
+		} else if (itemfilter.hasOwnProperty('purple')) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Picks random summoner spells, of a particular colour if that filter is given
+	$scope.pickSpells = function (filter) {
+		
+		// Filter summoner spells only by colour
+		if ($scope.colourFilter(filter)) {
+			var spellFilter = $scope.buildFilter(filter, null);
+			var spellList = $scope.spells.filter(spellFilter);
+		} else {
+			var spellList = $scope.spells;
+		}
+		
+		var spells = [null, null];
+		index = Math.floor((Math.random() * spellList.length));
+		spells[0] = {
+			id: spellList[index].id.toString(),
+			name: spellList[index].name,
+			icon: $scope.spellImage(spellList[index].name),
+		};
+
+		var alreadyPicked = index;
+		while( alreadyPicked == index ) {
+			index = Math.floor((Math.random() * spellList.length));
+		}
+
+		spells[1] = {
+			id: spellList[index].id.toString(),
+			name: spellList[index].name,
+			icon: $scope.spellImage(spellList[index].name),
+		};
+
+		return spells
 	}
 
 	// Returns an array with all items that match a particular filter
