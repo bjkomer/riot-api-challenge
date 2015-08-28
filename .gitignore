@@ -13,3 +13,8 @@ key.txt
 
 # Don't include csv files
 *.csv
+
+# Ignoring ZeroClipboard stuff for now
+
+*zeroclipboard.js
+*ZeroClipboard*
