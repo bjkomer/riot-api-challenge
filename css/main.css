@@ -8,9 +8,12 @@
     display:none; 
     margin:10px;
 }
+.item-filters {
+	padding:10px;
+}
 .champ-name {
 	text-align: left;
-	width:100%;
+	/*width:100%;*/
 }
 .champion-icon {
 	height: 128px;
@@ -39,4 +42,23 @@
 .available-items .item-icons img {
 	width: 50px;
 	height: 50px;
+}
+
+.item-file {
+	background-color: #c9c9c9;
+}
+
+.item-file p {
+	text-align: center;
+}
+
+.item-file input {
+  padding: 5px;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+}
+
+.item-file input:focus,
+.item-file input.focus {
+  border: solid 5px #969696;
 }
