@@ -72,7 +72,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":12,
@@ -95,7 +95,7 @@
     "animals":"0",
     "resets":"0",
     "traps":"0",
-    "medic":"0",
+    "medic":"1",
     "budget":"0",
     "stealth":"0"
   },
@@ -142,7 +142,7 @@
     "void":"0",
     "deathless":"1",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -245,7 +245,7 @@
     "animals":"0",
     "resets":"0",
     "traps":"0",
-    "medic":"0",
+    "medic":"1",
     "budget":"0",
     "stealth":"0"
   },
@@ -367,7 +367,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -567,7 +567,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -597,7 +597,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":81,
@@ -741,7 +741,7 @@
     "ninja":"0",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"0",
     "traps":"0",
@@ -867,7 +867,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -891,7 +891,7 @@
     "ninja":"0",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"0",
     "traps":"1",
@@ -991,7 +991,7 @@
     "ninja":"0",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"0",
     "traps":"0",
@@ -1166,7 +1166,7 @@
     "ninja":"0",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"1",
     "traps":"0",
@@ -1247,7 +1247,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":96,
@@ -1297,7 +1297,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":64,
@@ -1316,8 +1316,8 @@
     "ninja":"1",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
-    "animals":"1",
+    "jumpers":"1",
+    "animals":"0",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -1642,7 +1642,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"1",
@@ -1667,7 +1667,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -1717,7 +1717,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"1",
     "medic":"1",
@@ -1941,7 +1941,7 @@
     "ninja":"0",
     "void":"1",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"0",
     "traps":"0",
@@ -1967,7 +1967,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -1992,12 +1992,12 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":92,
@@ -2267,7 +2267,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -2392,7 +2392,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -2422,7 +2422,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":44,
@@ -2466,7 +2466,7 @@
     "ninja":"0",
     "void":"0",
     "deathless":"0",
-    "jumpers":"0",
+    "jumpers":"1",
     "animals":"0",
     "resets":"0",
     "traps":"1",
@@ -2542,7 +2542,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -2617,12 +2617,12 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":77,
@@ -2722,7 +2722,7 @@
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":45,
@@ -2867,7 +2867,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -2892,7 +2892,7 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
@@ -2917,12 +2917,12 @@
     "void":"0",
     "deathless":"0",
     "jumpers":"0",
-    "animals":"0",
+    "animals":"1",
     "resets":"0",
     "traps":"0",
     "medic":"0",
     "budget":"0",
-    "stealth":"0"
+    "stealth":"1"
   },
   {
     "id":101,
