@@ -106,7 +106,8 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 
 	//TODO add more here
 	// some fun titles for the item sets
-	$scope.braveryTitles = ["Feeder", "Noob", "Cardboard VII", "Useless"];
+	$scope.braveryTitles = ["Feeder", "Noob", "Cardboard VII", "Useless", "Tryhard", "Mid or Feed", 
+	                        "ARAM", "On Tilt", "Troll", "Rager", "Pentafeed"];
 	$scope.budgetTitles = ["Super Saver", "Cheapskate", "Broke", "Penniless", "Begger", 
 	                       "Financially Irresponsible", "Coupon Clipper", "Poverty Stricken",
 	                       "Ramen Noodle Eating", "Bankrupt", "Tax Evader"];
@@ -140,6 +141,15 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		}
 	}
 
+	$scope.pickMasteries = function() {
+		var masteries = [0,0,0];
+		var values = [1,1,2,3,5,8,10] // An attempt to make the randomization more interesting
+		for (var i = 0; i < 7; i++) {
+			index = Math.floor((Math.random() * 3));
+			masteries[index] += values[i];
+		}
+		return masteries;
+	}
 
 	// Generate a random item set, given specific restrictions
 	$scope.buildRandomItemSet = function (filters) {
@@ -148,24 +158,25 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			champion: null,									//chamption info
 			spells: [null, null],							//two summoner spells
 			masteries: [0, 0, 0],							//mastery points
-			max: [0],										//ability to max first
+			max: null,										//ability to max first
 			file: null,										//text for the item set file
 			title: null										//title for the item set
 		};
-		//TODO: pick random summoner spells, randomly include a jungle item if smite is taken
-		//TODO: pick random boots first
-		//TODO: code in the restrictions
-		//TODO: pick a random champion
 		
 		// Pick title for item set
 		data.title = $scope.pickTitle(filters.itemfilter)
+
+		// Pick Mastery Distribution
+		data.masteries = $scope.pickMasteries();
+
+		// Pick ability to max first
+		data.max = ["Q","W","E"][Math.floor((Math.random() * 3))]
 
 		// Pick Champion
 		// TODO: don't pick viktor if his hex core item is not allowed
 		data.champion = $scope.pickChampion(filters.championfilter);
 
 		// Pick Summoner Spells
-		//TODO
 		data.spells = $scope.pickSpells(filters.itemfilter);
 
 		// Pick Items
@@ -180,8 +191,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			bootsFilter = $scope.buildFilter(null, {boots:1});
 			bootsList = $scope.items.filter(bootsFilter);
 		}
-		//alert($scope.items.length);
-		//alert(bootsList.length);
+
 		index = Math.floor((Math.random() * bootsList.length));
 		data.items[i] = {
 			id: bootsList[index].id.toString(),
@@ -217,7 +227,6 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 			}
 		}
 		
-
 		// Don't allow boots and jungle items to be found normally
 		var itemFilter = $scope.buildFilter(filters.itemfilter, {boots:"0", jungle:"0", viktor:"0"});
 		var itemList = $scope.items.filter(itemFilter);
@@ -248,7 +257,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 				itemList = $scope.items.filter(itemFilter);
 			}
 		}
-		//TODO: put fun names in for the item sets 
+
 		data.file = $scope.buildItemSetFile(data.items, data.champion, data.title+" "+data.champion.name, "Your Arsenal");
 		return data;
 	}

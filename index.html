@@ -6,8 +6,6 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-zeroclipboard.js"></script>
     <script src="js/modules/zeroclipboard.js"></script>
-    <script src="ZeroClipboard.min.js" type="text/javascript"></script>
-    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +44,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="active" data-toggle="tab" href="#ultimate-bravery">Ultimate Bravery</a>
+                        <a class="navbar-brand active" data-toggle="tab" href="#challenger-league">Challenger League</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#ultimate-bravery">Ultimate Bravery</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#power-rangers">Power Rangers</a>
@@ -56,6 +57,9 @@
                     </li>
                     <li>
                         <a data-toggle="tab" href="#active">Activated Items</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#team-comp">Team Comp</a>
                     </li>
                 </ul>
             </div>
@@ -69,11 +73,24 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <!--<h1>Challenger League</h1>
-                <p class="lead">When winning is too easy, you need to challenge yourself</p>-->
-
                 <div class="tab-content">
-                    <div id="ultimate-bravery" class="tab-pane fade in active">
+                    <div id="challenger-league" class="tab-pane fade in active">
+                        <h1>Welcome to Challenger League!</h1>
+                        <div class="explanatory-text">
+                            <h2>The Challenges</h2>
+                            <h3>Ultimate Bravery</h3>
+                            <p>The classic <a href="http://www.ultimate-bravery.com/">ultimate bravery</a> challenge. You're custom item set will be provided, so no need to alt-tab in the middle of the game to find your next item. This alt-tabbing is the leading cause of braves losing their games. Making your way to challenger is no easy task, you'll need to be brave.</p>
+                            <h3>Power Rangers</h3>
+                            <p>Teamwork is important. There is no better example of this than the Power Rangers, who play as a team and consequently always win. In this challenge you'll play as one of the Power Rangers in order to emulate their team playing skills. You many only build items of a particular colour, and your summoner spells much match closely to that colour as well. Bonus if you also have a skin to match your ranger's colour.</p>
+                            <h3>Budget Builds</h3>
+                            <p>Due to some careless overspending, you are now on a strict budget. You are only able to summon champions that cost 450 IP and they may not buy any items that cost over 2600 gold in game. A handy set of all possible completed items that you may buy is provided when you accept this challenge. Luckily all forms of boots and jungle items are cheap enough for your budget. Learning to make the most with what you've got is key to climbing the ranks.</p>
+                            <h3>Activated Items</h3>
+                            <p>The game as it stands is too simple. Most of the time you can get away with only pressing a couple different buttons throughout an entire match. How hard is that? Lets up the difficulty by only allowing items that have an active ability. With all of this dexterity practice, you'll make it to Challenger in no time! Buying boots is acceptable, but if you are feeling particularly hardcore, opt out on that purchase.</p>
+                            <h3>Team Composition Challenges</h3>
+                            <p>Not getting along with teammates can drastically hurt your performance. These challenges provide you with groups of champions that are guaranteed to work well together. Playing with these team compositions will help make your games more enjoyable.</p>
+                        </div>
+                    </div>
+                    <div id="ultimate-bravery" class="tab-pane fade">
                         <div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-danger" ng-click="itemSetData=buildRandomItemSet(filters)">
@@ -115,8 +132,9 @@
                                     <label class="btn btn-primary" ng-click="setChampFilter('transformer')"><input type="radio" name="optradio">Transformer</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('zodiac')"><input type="radio" name="optradio">Zodiac</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('deathless')"><input type="radio" name="optradio">Deathless</label>
-                                    <label class="btn btn-primary" ng-click="setChampFilter('barnyard')"><input type="radio" name="optradio">Barnyard</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('animals')"><input type="radio" name="optradio">Animals</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('traps')"><input type="radio" name="optradio">Traps</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('medic')"><input type="radio" name="optradio">Medic</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('resets')"><input type="radio" name="optradio">Resets</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('jumpers')"><input type="radio" name="optradio">Jumpers</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('budget')"><input type="radio" name="optradio">Cheap</label>
@@ -172,6 +190,11 @@
                             <div ng-repeat="itemData in teamActiveItems">
                                 <items-available data=itemData range-fn=range></items-available>
                             </div>
+                        </div>
+                    </div>
+                    <div id="team-comp" class="tab-pane fade">
+                        <div class="team-comp">
+
                         </div>
                     </div>
                 </div>

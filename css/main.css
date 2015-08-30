@@ -35,6 +35,32 @@
 	margin:10px;
 	text-align: left;
 }
+.explanatory-text {
+	text-align: left;
+}
+.masteries-max {
+	top:-195px;
+	left:140px;
+	position:relative;
+}
+
+.masteries-max p {
+	padding:0;
+	margin:0;
+	font-size: 16px;
+}
+.mastery {
+	width:32px;
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	font-size: 0;
+}
+.max {
+	width:96px;
+	text-align: center;
+	font-size: 0;
+}
 /*
 .available-item-container {
 	display: inline-block;

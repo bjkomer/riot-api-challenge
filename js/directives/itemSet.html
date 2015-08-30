@@ -18,7 +18,15 @@
 		<div class="item-icons" ng-repeat="item in data.items">
 			<img ng-src="{{item.icon}}" title="{{item.name}}">
 		</div>
-
-
-	</div>	
+	</div>
+	<div class="masteries-max">
+		<div class="masteries">
+			<p class="mastery" style="background-color:red; color:white">{{data.masteries[0]}}</p
+			><p class="mastery" style="background-color:blue; color:white">{{data.masteries[1]}}</p
+			><p class="mastery" style="background-color:green; color:white">{{data.masteries[2]}}</p
+		></div>
+		<div class="max">
+			<p style="background-color:black; color:white">Max {{data.max}} First</p
+		></div>
+	</div>
 </div>
