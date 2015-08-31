@@ -38,6 +38,8 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		return 'images/spells/'+name.replace(/ /gi, '_')+'.png'
 	}
 
+
+
 	// returns a filter function that matches the requirements of the given filter object
 	// extra is an additional filter than can be passed and checked as well. Used for boots and jungle items
 	$scope.buildFilter = function(filter, extra) {
@@ -75,7 +77,12 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		$scope.filters['championfilter'] = {};
 		if (name != 'all') {
 			$scope.filters['championfilter'][name] = "1";
+
+			// Stuff for the Team Comp page
+			$scope.teamCompDescription = $scope.teamCompDescriptions[name];
+			$scope.teamCompChampions = $scope.champions.filter($scope.buildFilter($scope.filters['championfilter'], null));
 		}
+
 	}
 
 	// Constructs the json for the item set file
@@ -502,5 +509,33 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	    }
 	    return result;
 	}
+
+	// Sets the description text for the Team Comp challenge tab
+	$scope.teamCompDescriptions = {
+		all:"",
+		yordle:"Yordles!",
+		freljord:"Champions from the Freljord",
+		demacia:"Champions from Demacia",
+		noxus:"Champions from Noxus",
+		bilgewater:"Champions from Bligewater",
+		ionia:"Champions from Ionia",
+		zaun:"Champions from Zaun",
+		piltover:"Champions from Piltover",
+		void:"Void Champions",
+		ninja:"Ninjas!",
+		transformer:"Champions that can transform to gain a new ability set.",
+		zodiac:"Champions that are a part of the Chinese Zodiac. You will need the Cottontail Teemo skin for this one.",
+		deathless:"Champions that can come back from the dead or still contribute to the fight while dead. Bonus points if everyone builds Guardian Angel",
+		animals:"Champions that are animals",
+		traps:"Champions that can place traps",
+		medic:"Champions that can heal their allies",
+		resets:"Champions who get ability resets on a kill",
+		jumpers:"Champions that can either jump to wards or place ward-like objects. Bonus points if everyone builds a sightstone during the game.",
+		budget:"Champions that cost 450 IP",
+		stealth:"Champions that are able to become stealthed"
+	}
+	$scope.teamCompDescription = $scope.teamCompDescriptions["all"];
+	//$scope.teamCompFilter = $scope.buildFilter({yordle:"1"},null);
+	//$scope.teamCompChampions = $scope.champions.filter($scope.teamCompFilter);
 
 }]);

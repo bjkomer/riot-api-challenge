@@ -194,7 +194,40 @@
                     </div>
                     <div id="team-comp" class="tab-pane fade">
                         <div class="team-comp">
-
+                            <div class="team-comp-champion-filters">
+                                <div class="btn-group"  data-toggle="buttons">
+                                    <label class="btn btn-primary" ng-click="setChampFilter('yordle')"><input type="radio" name="optradio">Yordle</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('freljord')"><input type="radio" name="optradio">Freljord</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('demacia')"><input type="radio" name="optradio">Demacia</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('noxus')"><input type="radio" name="optradio">Noxus</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('bilgewater')"><input type="radio" name="optradio">Bilgewater</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('ionia')"><input type="radio" name="optradio">Ionia</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('zaun')"><input type="radio" name="optradio">Zaun</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('piltover')"><input type="radio" name="optradio">Piltover</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('void')"><input type="radio" name="optradio">Void</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('ninja')"><input type="radio" name="optradio">Ninja</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('transformer')"><input type="radio" name="optradio">Transformer</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('zodiac')"><input type="radio" name="optradio">Zodiac</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('deathless')"><input type="radio" name="optradio">Deathless</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('animals')"><input type="radio" name="optradio">Animals</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('traps')"><input type="radio" name="optradio">Traps</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('medic')"><input type="radio" name="optradio">Medic</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('resets')"><input type="radio" name="optradio">Resets</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('jumpers')"><input type="radio" name="optradio">Jumpers</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('budget')"><input type="radio" name="optradio">Cheap</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('stealth')"><input type="radio" name="optradio">Stealth</label>
+                                </div>
+                            </div>
+                            <div class="team-comp-description">
+                                <h2>{{teamCompDescription}}</h2>
+                            </div>
+                            <div class="team-comp-icons">
+                                <div ng-repeat="index in range(teamCompChampions.length/4)">
+                                    <div class="team-comp-icons-row" ng-repeat="champ in teamCompChampions.slice(index*4, (index+1)*4)">
+                                        <img ng-src="{{championImage(champ.image_name)}}" title="{{champ.name}}">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

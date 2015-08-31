@@ -108,3 +108,11 @@
 	top:-75px;
 	left:-2px;
 }
+
+.team-comp-icons-row {
+	display: inline-block;
+	position:relative;
+}
+.team-comp-champion-filters {
+	
+}
