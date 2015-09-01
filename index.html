@@ -76,7 +76,20 @@
                 <div class="tab-content">
                     <div id="challenger-league" class="tab-pane fade in active">
                         <h1>Welcome to Challenger League!</h1>
+                        <br>
                         <div class="explanatory-text">
+                            <p>Here you will find a variety of fun challenges to enhance your League of Legends experience. These challenges involve using particular items and champions to defeat your foes. Succeeding in these trials is a true display of skill and a great way to embark on your journey to the real 'Challenger League'. Good luck!</p>
+                            <p>To use the custom item sets provided, follow these instructions:</p>
+                            <ul>
+                                <li>Click on the text box that shows the title of the item set</li>
+                                <li>This should automatically select all of the text in the box, if it does not, simply double or triple click until everything is selected</li>
+                                <li>Copy all of this text</li>
+                                <li>Navigate to the location on your computer where item sets are saved. This may be different for every person, but the path will look something like this: C:\Riot Games\League of Legends\Config\Champions</li>
+                                <li>In that directory, open up the folder corresponding to the champion you will be using</li>
+                                <li>Create a new file. Give it whatever name you want as long as it ends in .json</li>
+                                <li>Paste the text into this file and save it. You're all set!</li>
+                                <li>Next time you enter the rift with your chosen champion, the item set will be there. Your client can be open while you do this, but you should do it before entering a game.</li>
+                            </ul>
                             <h2>The Challenges</h2>
                             <h3>Ultimate Bravery</h3>
                             <p>The classic <a href="http://www.ultimate-bravery.com/">ultimate bravery</a> challenge. You're custom item set will be provided, so no need to alt-tab in the middle of the game to find your next item. This alt-tabbing is the leading cause of braves losing their games. Making your way to challenger is no easy task, you'll need to be brave.</p>
@@ -87,7 +100,10 @@
                             <h3>Activated Items</h3>
                             <p>The game as it stands is too simple. Most of the time you can get away with only pressing a couple different buttons throughout an entire match. How hard is that? Lets up the difficulty by only allowing items that have an active ability. With all of this dexterity practice, you'll make it to Challenger in no time! Buying boots is acceptable, but if you are feeling particularly hardcore, opt out on that purchase.</p>
                             <h3>Team Composition Challenges</h3>
-                            <p>Not getting along with teammates can drastically hurt your performance. These challenges provide you with groups of champions that are guaranteed to work well together. Playing with these team compositions will help make your games more enjoyable.</p>
+                            <p>Not getting along with teammates can drastically hurt your performance. These challenges provide you with groups of champions that are guaranteed to work well together. Build your team of five using only champions from your chosen set. Playing with these team compositions will help make your games more enjoyable.</p>
+                            <br>
+                            <br>
+                            <p class="col-md-6 col-md-offset-3" style="text-align:center; font-size:10px">Challenger League isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
                         </div>
                     </div>
                     <div id="ultimate-bravery" class="tab-pane fade">
@@ -127,6 +143,8 @@
                                     <label class="btn btn-primary" ng-click="setChampFilter('ionia')"><input type="radio" name="optradio">Ionia</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('zaun')"><input type="radio" name="optradio">Zaun</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('piltover')"><input type="radio" name="optradio">Piltover</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('shurima')"><input type="radio" name="optradio">Shurima</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('shadowisles')"><input type="radio" name="optradio">Shadow Isles</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('void')"><input type="radio" name="optradio">Void</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('ninja')"><input type="radio" name="optradio">Ninja</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('transformer')"><input type="radio" name="optradio">Transformer</label>
@@ -139,6 +157,7 @@
                                     <label class="btn btn-primary" ng-click="setChampFilter('jumpers')"><input type="radio" name="optradio">Jumpers</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('budget')"><input type="radio" name="optradio">Cheap</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('stealth')"><input type="radio" name="optradio">Stealth</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('pentakill')"><input type="radio" name="optradio">Pentakill</label>
                                 </div>
                             </div>
                         </div>
@@ -204,6 +223,8 @@
                                     <label class="btn btn-primary" ng-click="setChampFilter('ionia')"><input type="radio" name="optradio">Ionia</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('zaun')"><input type="radio" name="optradio">Zaun</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('piltover')"><input type="radio" name="optradio">Piltover</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('shurima')"><input type="radio" name="optradio">Shurima</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('shadowisles')"><input type="radio" name="optradio">Shadow Isles</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('void')"><input type="radio" name="optradio">Void</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('ninja')"><input type="radio" name="optradio">Ninja</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('transformer')"><input type="radio" name="optradio">Transformer</label>
@@ -216,6 +237,7 @@
                                     <label class="btn btn-primary" ng-click="setChampFilter('jumpers')"><input type="radio" name="optradio">Jumpers</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('budget')"><input type="radio" name="optradio">Cheap</label>
                                     <label class="btn btn-primary" ng-click="setChampFilter('stealth')"><input type="radio" name="optradio">Stealth</label>
+                                    <label class="btn btn-primary" ng-click="setChampFilter('pentakill')"><input type="radio" name="optradio">Pentakill</label>
                                 </div>
                             </div>
                             <div class="team-comp-description">

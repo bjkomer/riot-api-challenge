@@ -521,6 +521,8 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		ionia:"Champions from Ionia",
 		zaun:"Champions from Zaun",
 		piltover:"Champions from Piltover",
+		shurima:"Champions from Shurima",
+		shadowisles:"Champions from the Shadow Isles",
 		void:"Void Champions",
 		ninja:"Ninjas!",
 		transformer:"Champions that can transform to gain a new ability set.",
@@ -532,7 +534,8 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		resets:"Champions who get ability resets on a kill",
 		jumpers:"Champions that can either jump to wards or place ward-like objects. Bonus points if everyone builds a sightstone during the game.",
 		budget:"Champions that cost 450 IP",
-		stealth:"Champions that are able to become stealthed"
+		stealth:"Champions that are able to become stealthed",
+		pentakill:"Members of Pentakill. Bonus points if you have all of the skins."
 	}
 	$scope.teamCompDescription = $scope.teamCompDescriptions["all"];
 	//$scope.teamCompFilter = $scope.buildFilter({yordle:"1"},null);
